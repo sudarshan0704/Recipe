@@ -1,0 +1,315 @@
+.itemslist {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the items horizontally */
+    gap: 20px; /* Add some space between the items */
+    margin-left: auto; /* Center align */
+    margin-right: auto; /* Center align */
+    margin-top: 10px;
+  }
+  
+  .recipe-card {
+    width: 300px;
+    /* border: 2px solid #e0e0e0; */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    font-family: 'Arial, sans-serif';
+    /* background-color: #fafafa; */
+    margin: 20px; /* Add margin for spacing between cards */
+    /* box-shadow: 15px 15px 60px rgb(163, 159, 159), inset -15px -15pc 60px rgb(0, 0, 0);
+  */}
+  
+  .recipe-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .recipe-image {
+    width: 100%; /* Ensure image takes full width of the card */
+    height: auto;
+  }
+  
+  .recipe-details {
+    padding: 20px;
+    /* background-color: #fafafa; */
+  }
+  
+  .recipe-title {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+    color: #333;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .recipe-info {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    color: #666;
+  }
+  
+  .recipe-info .icon {
+    margin-right: 10px;
+    font-size: 1.2em;
+    color: #ff6f61;
+  }
+  
+  .difficulty {
+    margin-top: 10px;
+  }
+  
+    ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+   .selected ul {
+    text-align: start;
+    margin-left: -70px;
+    color: rgb(8, 8, 59);
+  }
+  
+  .selected {
+    width: 100%;
+    height: auto;
+    /* height: auto; */
+   /* position: sticky; */
+    top: 20px; /* Adjust top position as needed */
+    background-color: #fafafa;
+    padding: 30px;
+    box-shadow: 15px 15px 60px rgb(163, 159, 159), inset -15px -15px 60px rgb(210, 210, 210);
+      }
+  
+  .selected img {
+    width: 30%; /* Ensure image takes full width of the container */
+    height: 30%;
+    border: 2px solid black;
+    border-radius: 30px;
+  }
+  
+  .selected h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: #ec9f12;
+    text-transform: capitalize;
+  }
+  
+  .selected #level {
+    font-size: 20px;
+    
+    margin-top: 10px;
+    margin-left: 730px;
+  }
+  .selected .stime
+  {
+    font-size: 20px;
+    
+    margin-top: 10px;
+    margin-left: -100px;
+    color: red;
+  } 
+  .selected .time {
+    color: brown;
+    font-size: 20px;
+  }
+  
+  .selected ul li {
+    /* list-style: ; */
+    /* list-style-type: circle; */
+    display: flex;
+    margin: 20px 0;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+  }
+  
+  .selected ul {
+    padding-left: 0;
+  }
+  
+  .selected ul li span {
+    color: #ec9f12;
+    text-transform: capitalize;
+  }
+  
+   .instruction {
+    margin-top: 30px;
+    height: auto;
+    margin-left: 50px;
+    background-color: #fafafa;
+    
+    width: 50%;
+    text-align: start;
+    align-items: start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .ingredients
+  {
+    margin-top: 30px;
+    height: auto;
+    margin-left: 1px;
+    background-color: #fafafa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    text-align: start;
+    align-items: start;
+    width: 30%;
+  }
+  
+  .ingredients h1, .instruction h1 {
+    color: #ec9f12;
+    font-size: 20px;
+  margin-left: 30px ;
+   
+  }
+  
+  .ingredients hr, .instruction hr {
+   
+    color: #ec9f12;
+  
+  }
+  
+  #indlist {
+    padding-left: 0;
+  }
+  .insec
+  {
+    display: flex;
+  }
+  #indlist li {
+    font-size: 15px;
+    margin-top: 5px;
+    line-height: 1;
+    margin-left: 100px;
+  }
+  
+  .itempage {
+    display: flex;
+    justify-content: space-between; /* Adjust space between selected and itemslist */
+    padding: 30px;
+    gap: 20px; /* Add space between selected and itemslist */
+  }
+  /* From Uiverse.io by LightAndy1 */ 
+.group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: 500px;
+  margin-left: 950px;
+  margin-top: 30px;
+}
+
+.input {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  height: 45px;
+  padding-left: 2.5rem;
+  box-shadow: 0 0 0 1.5px #2b2c37, 0 0 25px -17px #000;
+  border: 0;
+  border-radius: 12px;
+  background-color: #ffffff;
+  outline: none;
+  color: #000000;
+  transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1);
+  cursor: text;
+  z-index: 0;
+}
+
+.input::placeholder {
+  color: #000000;
+}
+
+.input:hover {
+  box-shadow: 0 0 0 2.5px #2f303d, 0px 0px 25px -15px #000;
+}
+
+.input:active {
+  transform: scale(0.95);
+}
+
+.input:focus {
+  box-shadow: 0 0 0 2.5px #2f303d;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  fill: #ff0f02;
+  width: 1rem;
+  height: 1rem;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* From Uiverse.io by adamgiebl */ 
+.cssbuttons-io-button {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  /* padding: 0.7em 1.4em 0.7em 1.1em; */
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(
+    0deg,
+    rgba(20, 167, 62, 1) 0%,
+    rgba(102, 247, 113, 1) 100%
+  );
+  border: 1px solid black;
+  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+position: relative;
+top: -298px;
+left: 220px;
+}
+.cssbuttons-io-button span
+{
+  margin-left: 2px;
+  color: #ffffff;
+
+  text-transform: capitalize;
+}
+.cssbuttons-io-button svg {
+  
+  color: #ffffff;
+  z-index: 1;
+}
+
+.cssbuttons-io-button:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+}
+
+.cssbuttons-io-button:active {
+  box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+}
+.remove-button {
+  background-color: #ff1500;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 10px;
+  border-radius: 5px;
+  margin-top: 1px;
+  position: relative;
+  top: -300px;
+  left: 125px;
+  border: 1px solid black;
+}
+
+.remove-button:hover {
+  background-color: #ff4c41;
+}
+
+  
