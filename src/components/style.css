@@ -7,7 +7,7 @@
 /* Home */
 .home
 {  
-    background-image:url(pexels-janetrangdoan-1128678.jpg);
+  background-image:url(pexels-janetrangdoan-1128678.jpg);
     width: 99vw;
     height: 100vh;
     background-position: center;
@@ -15,7 +15,7 @@
     background-size: cover;
     position: relative;
     border-image: fill 0 linear-gradient(transparent,rgba(102, 100, 100, 0.598));
-    
+   
  
 
 }
@@ -25,6 +25,7 @@
     width: 700px;
     height: 400px;
     display: flex;
+    
    
     flex-direction: column;
     margin-top: 200px;
@@ -87,8 +88,8 @@ span
 { border-radius: 20px;
   width: 50%;
 height: 300px;
-/* background-color: #e0e0e0; */
-  box-shadow: 10px 10px 60px gray;
+ /* background-color: #e0e0e0; */
+   box-shadow: 10px 10px 60px gray;
   border:  2px solid black;
   margin-right: 200px;
   background-color: #e79f18;
@@ -255,6 +256,8 @@ footer
     flex: 1;
     min-width: 200px;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
   }
   
   .footer-section h2 {
@@ -366,5 +369,206 @@ footer
     line-height: 1.6;
     margin-bottom: 20px;
   }
+  /* Add this at the end of your existing CSS */
+
+/* General responsive adjustments */
+@media (max-width: 1024px) {
+  .home {
+    height: auto;
+    min-height: 100vh;
+   
+  }
+
+  .home .content {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    padding: 20px;
+  }
+
+  .content h1 {
+    font-size: 48px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .content h1:nth-child(1) {
+    margin-left: 0;
+  }
+
+  span {
+    margin-left: 0;
+  }
+
+  .home .content button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .section2, .section1 {
+    height: auto;
+    flex-direction: column;
+    padding: 2px 20px;
+  }
+
+  .page1, .page2 {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .page1 img {
+    width: 100%;
+    height: auto;
+    position: static;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .page1 p, .page2 p {
+    margin-top: 0;
+    margin-right: 0;
+    font-size: 18px;
+  }
+
+  .nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .nav img {
+    margin: 0 auto;
+  }
+
+  .nav h3 {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .nav ul {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 46px;
+    color: #ffffff;
+
+    
+    margin-left: 0;
+    text-align: center;
+    
+  }
+  .page1 {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 40px;
+    background-color: transparent !important;
+    border: none;
+    padding: 10px
+  }
+  .section2
+  {
+    height: auto;
+    flex-direction: column;
+    padding: 2px 20px;
+    background-color: white !important;
+    border: none;
+    color: #000000;
+  }
+  .section1 {
+    height: auto;
+    width: 90%;
+    flex-direction: column;
+    padding: 1px 20px;
+    background-color: white;
+    border: none;
+    margin: auto;
+  }
+
+  .page1 h1 {
+    font-size: 22px
+  }
+.page1 img {
+    width: 50%;
+    height: 200px;
+    position: static;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 50%;
+
+  }
+  .page1 p, .page2 article>p{
+    font-size: 20px;
+    line-height: 2;
+  }
+  .page2 article>p{
+    font-size: 20px;
+    line-height: 2;
+    margin-left: -20px;
+  }
+  .nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .footer .container {
+    flex-direction: column;
+  }
+
+  .footer-section {
+    margin-bottom: 30px;
+  }
+.section1{  
+  margin-top: -20px;
+  background-color: #e0e0e0;
+}
+.about-section
+{
+  display: flex ;
+  flex-direction: column;
+  padding: 20px;
+
+}
+}
+
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .content h1 {
+    font-size: 28px;
+  }
+
+  .home .content button {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .page1 h1 {
+    font-size: 20px;
+  }
+
+  .page1 p, .page2 p {
+    font-size: 14px;
+  }
+  .section1{  
+    margin-top: -20px;
+    background-color: #ff0000;
+  }
+}
   
   

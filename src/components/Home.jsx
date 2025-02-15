@@ -22,7 +22,7 @@ export default function Home() {
             <div className='section2'>
                 <div className='page1'>
                     <h1>WHY CHOOSE US?</h1>
-                    <img src={img1} alt="" />
+                    <img src={img1} alt="" width="auto" height="auto" />
                     <p>At Tastequest, we are passionate about premium-quality foods sourced from accredited producers from around the world, and are dedicated to working closely with our customers to ensure their successes.
 
                         To fulfil our aims, we are proud to offer the following:
